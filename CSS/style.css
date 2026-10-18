@@ -365,3 +365,7 @@ ul,ol{ list-style:none; }
   .bar span{ transition:none; }
   .card, .btn, .tl-card{ transition:none; }
 }
+
+/* projects and education details */
+.project p{ font-size:0.94em; margin-bottom:14px; }
+.edu-detail{ font-size:0.88em; color:var(--muted); margin-top:4px; line-height:1.5; }
