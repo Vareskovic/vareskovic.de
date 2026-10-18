@@ -395,3 +395,4 @@ ul,ol{ list-style:none; }
 .resp > p + .chips{ margin-top:14px; }
 .resp .chips + .more-wrap, .resp .more-wrap + .more-wrap{ margin-top:4px; }
 .resp > p + .chips{ margin-top:14px; }
+.resp > p + p:not(.more-wrap){ margin-top:10px; }
