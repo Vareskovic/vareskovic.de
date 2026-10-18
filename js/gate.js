@@ -157,13 +157,12 @@
       });
     });
 
-    var footerLinks = document.querySelector('.site-footer p');
+    var footerLinks = document.querySelector('.content-footer p, .site-footer p');
     if(footerLinks){
       var out = document.createElement('a');
       out.href = '#';
-      out.innerHTML = '<i class="fa-solid fa-right-from-bracket"></i> Abmelden';
+      out.textContent = 'Abmelden';
       out.addEventListener('click', function(ev){ ev.preventDefault(); clearRaw(); location.reload(); });
-      footerLinks.appendChild(document.createTextNode(' · '));
       footerLinks.appendChild(out);
     }
 

@@ -6,37 +6,33 @@
 <meta name="description" content="Impressum – Boris Vareskovic.">
 <meta name="robots" content="noindex, nofollow">
 <title>Impressum — Boris Vareskovic</title>
+<script>document.documentElement.classList.add('js')</script>
 
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%2314161A'/><text x='50%25' y='58%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial,sans-serif' font-weight='700' font-size='26' fill='%23ffffff'>BV</text></svg>">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='1'><stop offset='0' stop-color='%233b82f6'/><stop offset='1' stop-color='%2314b8a6'/></linearGradient></defs><rect width='64' height='64' rx='14' fill='url(%23g)'/><text x='50%25' y='56%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial,sans-serif' font-weight='700' font-size='26' fill='white'>BV</text></svg>">
 
 <link rel="stylesheet" href="CSS/fonts.css">
-<link rel="stylesheet" href="fontawesome/css/all.min.css">
 <link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
 
-<div class="aura" aria-hidden="true"><span class="aura-a"></span><span class="aura-b"></span><span class="aura-c"></span></div>
+<div class="backdrop" aria-hidden="true"></div>
 
 <nav class="site-nav">
   <div class="wrap">
-    <a class="brand" href="index.html">
-      <span class="brand-mark">BV</span>
-      <span class="brand-name">Boris Vareskovic</span>
-    </a>
-    <a class="nav-back" href="index.html"><i class="fa-solid fa-arrow-left"></i> Zurück</a>
+    <a class="brand" href="index.html"><span class="brand-mark">BV</span>Boris Vareskovic</a>
+    <a class="nav-back" href="index.html"><svg class="i"><use href="icons/sprite.svg#arrow-left"/></svg> Zurück<span class="hide-sm"> zur Übersicht</span></a>
   </div>
 </nav>
 
-<div class="page">
+<main class="page">
   <div class="wrap">
-    <div class="page-header fi">
-      <span class="eyebrow mono">Rechtliches</span>
+    <header class="page-header">
       <h1 class="page-title">Impressum</h1>
       <p class="page-lead">Angaben gemäß § 5 TMG / § 5 DDG.</p>
-    </div>
+    </header>
 
-    <div class="card legal-card fi">
-      <h3 class="subhead">Angaben zur Person</h3>
+    <div class="card legal">
+      <h2>Angaben zur Person</h2>
       <p>
         Boris Vareskovic<br>
         Amselfing 6<br>
@@ -44,31 +40,33 @@
         Deutschland
       </p>
 
-      <h3 class="subhead">Kontakt</h3>
+      <h2>Kontakt</h2>
       <p>E-Mail: <a href="mailto:impressum@vareskovic.de">impressum@vareskovic.de</a></p>
 
-      <h3 class="subhead">Verantwortlich für den Inhalt</h3>
+      <h2>Verantwortlich für den Inhalt</h2>
       <p>Boris Vareskovic (Anschrift wie oben)</p>
 
-      <h3 class="subhead">Haftung für Inhalte</h3>
+      <h2>Haftung für Inhalte</h2>
       <p>Die Inhalte dieser privaten Website wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte kann jedoch keine Gewähr übernommen werden. Für eigene Inhalte auf diesen Seiten bin ich gemäß § 7 Abs. 1 TMG nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG besteht jedoch keine Verpflichtung, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen.</p>
 
-      <h3 class="subhead">Haftung für Links</h3>
+      <h2>Haftung für Links</h2>
       <p>Diese Website enthält Links zu externen Websites Dritter (z.&nbsp;B. LinkedIn), auf deren Inhalte ich keinen Einfluss habe. Deshalb kann ich für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Bei Bekanntwerden von Rechtsverletzungen werde ich derartige Links umgehend entfernen.</p>
 
-      <h3 class="subhead">Urheberrecht</h3>
+      <h2>Urheberrecht</h2>
       <p>Die durch den Seitenbetreiber erstellten Inhalte und Werke auf dieser Website unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers.</p>
     </div>
   </div>
-</div>
+</main>
 
 <footer class="site-footer">
-  <p>
-    <a href="https://de.linkedin.com/in/boris-vareskovic-2a3308231" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i> LinkedIn</a> ·
-    <a href="impressum.html">Impressum</a> ·
-    <a href="datenschutz.html">Datenschutz</a>
-  </p>
-  <p>&copy; 2026 Boris Vareskovic</p>
+  <div class="wrap">
+    <p>
+      <a href="https://de.linkedin.com/in/boris-vareskovic-2a3308231" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="impressum.html">Impressum</a>
+      <a href="datenschutz.html">Datenschutz</a>
+    </p>
+    <p>&copy; 2026 Boris Vareskovic</p>
+  </div>
 </footer>
 
 <script src="js/site.js"></script>
