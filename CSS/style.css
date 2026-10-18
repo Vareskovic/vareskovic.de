@@ -393,3 +393,5 @@ ul,ol{ list-style:none; }
 .stat dd.dd-text{ font-size:1.55em; line-height:1.35; }
 .resp-grid .wide{ grid-column:1 / -1; }
 .resp > p + .chips{ margin-top:14px; }
+.resp .chips + .more-wrap, .resp .more-wrap + .more-wrap{ margin-top:4px; }
+.resp > p + .chips{ margin-top:14px; }
