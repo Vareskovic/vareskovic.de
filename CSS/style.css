@@ -391,3 +391,5 @@ ul,ol{ list-style:none; }
 .claude{ margin-top:12px; padding:22px; }
 .claude-chips{ margin-top:18px; }
 .stat dd.dd-text{ font-size:1.55em; line-height:1.35; }
+.resp-grid .wide{ grid-column:1 / -1; }
+.resp > p + .chips{ margin-top:14px; }
