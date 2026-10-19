@@ -17,6 +17,7 @@
   --gradient:linear-gradient(135deg, var(--navy) 0%, var(--blue) 100%);
   --shadow:0 1px 2px rgba(15,30,54,0.05), 0 4px 16px -6px rgba(15,30,54,0.08);
   --sans:'Geist', -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --display:'Sora', var(--sans);
   --mono:'Geist Mono', ui-monospace, 'SFMono-Regular', Menlo, monospace;
   --radius:16px;
   --ease:cubic-bezier(.2,.8,.2,1);
@@ -62,7 +63,7 @@ ul,ol{ list-style:none; }
   border-bottom:1px solid var(--border);
 }
 .site-nav .wrap{ display:flex; align-items:center; justify-content:space-between; min-height:64px; gap:24px; }
-.brand{ display:flex; align-items:center; gap:10px; white-space:nowrap; font-weight:650; color:var(--ink); letter-spacing:-0.01em; }
+.brand{ display:flex; align-items:center; gap:10px; white-space:nowrap; font-family:var(--display); font-weight:600; color:var(--ink); letter-spacing:-0.01em; }
 .brand:hover{ color:var(--ink); }
 .brand-mark{
   width:30px; height:30px; border-radius:9px; background:var(--gradient); color:#fff;
@@ -125,7 +126,10 @@ ul,ol{ list-style:none; }
   position:sticky; top:0; height:100vh;
   display:flex; flex-direction:column; justify-content:space-between; padding:60px 0 40px;
 }
-.side-photo{ position:relative; width:200px; }
+.side-intro{ text-align:center; max-width:460px; }
+.side-intro .side-fields{ justify-content:center; margin-left:auto; margin-right:auto; }
+.side-intro .side-role{ margin-left:auto; margin-right:auto; }
+.side-photo{ position:relative; width:200px; margin:0 auto; }
 .side-photo img{
   width:100%; height:auto;
   -webkit-mask-image:
@@ -137,7 +141,7 @@ ul,ol{ list-style:none; }
     linear-gradient(to right, transparent 0%, #000 14%, #000 86%, transparent 100%);
   mask-composite:intersect;
 }
-.side h1{ font-size:clamp(2.4em, 3.6vw, 3.3em); font-weight:700; letter-spacing:-0.04em; line-height:1.02; margin-top:28px; }
+.side h1{ font-family:var(--display); font-size:clamp(2.2em, 3.3vw, 3em); font-weight:600; letter-spacing:-0.035em; line-height:1.05; margin-top:26px; }
 .side-role{ color:var(--ink-soft); font-size:1.05em; line-height:1.5; margin-top:14px; max-width:430px; }
 
 .side-fields{ margin-top:18px; max-width:440px; }
@@ -301,7 +305,7 @@ ul,ol{ list-style:none; }
 .gate-form{ width:100%; max-width:400px; padding:36px 32px 30px; }
 .gate-auto .gate-form{ visibility:hidden; }
 .gate-form .brand-mark{ width:46px; height:46px; border-radius:13px; font-size:1em; margin-bottom:22px; }
-.gate-form h1{ font-size:1.7em; letter-spacing:-0.03em; }
+.gate-form h1{ font-family:var(--display); font-weight:600; font-size:1.65em; letter-spacing:-0.03em; }
 .gate-lead{ color:var(--muted); margin:6px 0 26px; }
 .gate-field{ display:block; margin-bottom:16px; }
 .gate-field span{ display:block; font-size:0.86em; font-weight:500; color:var(--ink-soft); margin-bottom:6px; }
@@ -350,7 +354,8 @@ ul,ol{ list-style:none; }
   .layout{ display:block; padding:0 24px; }
   .side{ position:static; height:auto; padding:36px 0 40px; }
   .side-photo{ width:min(230px, 62vw); }
-  .side h1{ font-size:clamp(2.3em, 10vw, 3.2em); }
+  .side h1{ font-size:clamp(2.1em, 9.5vw, 3em); }
+  .side-intro{ max-width:none; }
   .side-nav, .side-links{ display:none; }
   .content{ padding-top:24px; }
   .sec{ padding-bottom:72px; }
